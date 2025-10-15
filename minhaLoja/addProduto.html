@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adicionar Produto</title>
+  <link rel="stylesheet" href="css/addProdutos.css">
+</head>
+<body>
+
+  <!-- POPUP -->
+  <div id="popupMensagem" class="popup">
+    <div class="popup-content">
+      <p id="popupTexto"></p>
+    </div>
+  </div>
+
+  <div align="center" style="padding:20px; margin-top:120px;">
+    <div class="produto-container">
+      <section class="form-section">
+        <h2 class="titulo-produto">Adicionar novo produto</h2>
+
+        <form id="formProduto" enctype="multipart/form-data">
+          <div class="form-body">
+            <div class="form-card">
+
+              <div class="form-group row mb-4">
+                <div class="col-md-12">
+                  <input type="file" class="input-file" name="capa" accept="image/*" required>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" class="input-text" name="nome" placeholder="Nome do Produto" required>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="number" class="input-number" name="valor" placeholder="Valor" step="0.01" required>
+                </div>
+              </div>
+
+              <div class="form-group row mb-4">
+                <div class="col-md-12">
+                  <button type="submit" class="btn-submit" style="width:100%;">
+                    Salvar
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <a href="index.html"><button class="btn-voltar">Voltar à Loja</button></a>
+
+  <script src="js/addProduto.js"></script>
+</body>
+</html>
